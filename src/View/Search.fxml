@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="searchPane" prefHeight="538.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BSearchController">
+   <children>
+      <Pane prefHeight="543.0" prefWidth="14.0" style="-fx-background-color: #1F618D#1F618D;" />
+      <Pane layoutX="14.0" layoutY="-1.0" prefHeight="369.0" prefWidth="14.0" style="-fx-background-color: #00BFFF;" />
+      <Label layoutX="246.0" layoutY="37.0" text="Search ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="199.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/26.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="82.0" layoutY="93.0" prefHeight="28.0" prefWidth="364.0" promptText="Search" />
+      <TableView fx:id="tableSearch" layoutX="82.0" layoutY="136.0" prefHeight="382.0" prefWidth="364.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Book ID" />
+          <TableColumn prefWidth="96.0" text="Title" />
+            <TableColumn prefWidth="104.0" text="Author" />
+            <TableColumn prefWidth="88.0" text="Status" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="icnBack" fitHeight="44.0" fitWidth="36.0" layoutX="28.0" layoutY="482.0" onMouseClicked="#icnBack_OnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/20.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashoard" prefHeight="343.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LDashboardController">
+   <children>
+      <ImageView fitHeight="458.0" fitWidth="793.0" layoutX="-1.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/7.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icnUsers" fitHeight="150.0" fitWidth="200.0" layoutX="122.0" layoutY="36.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/13.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icnBooks" fitHeight="150.0" fitWidth="200.0" layoutX="321.0" layoutY="36.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/9.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icnReturn" fitHeight="150.0" fitWidth="200.0" layoutX="221.0" layoutY="239.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/16.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icnIssue" fitHeight="150.0" fitWidth="200.0" layoutX="521.0" layoutY="36.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/15.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icnSearch" fitHeight="150.0" fitWidth="200.0" layoutX="420.0" layoutY="239.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Img/17.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="151.0" layoutY="202.0" text="Manage Users">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="202.0" text="Manage Books">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="561.0" layoutY="202.0" text="Issue Books">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="406.0" text="Returns">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="406.0" text="Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
